@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class GuessGame implements Serializable {
 
-    public int score;
+    private int score;
     private static GuessGame instance = new GuessGame();
 
     private GuessGame()
@@ -27,6 +27,7 @@ public class GuessGame implements Serializable {
               System.out.println("Pudło! Wylosowana liczba to: " + number);
           }
       }
+      System.out.println("Twoj wynik: " + score);
   }
 
  public int getScore()
