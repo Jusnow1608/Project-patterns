@@ -1,6 +1,6 @@
-package co.observertask.weatherforecast;
+package co.devfoundry.patterns.observer.order;
 
-import co.observertask.notification.Observer;
+import co.devfoundry.patterns.observer.notification.Observer;
 
 public interface Observable {
     void registerObserver(Observer observer);

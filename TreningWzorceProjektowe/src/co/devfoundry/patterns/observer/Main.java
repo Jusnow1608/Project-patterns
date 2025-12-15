@@ -1,10 +1,10 @@
-package co.devfoundry;//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+package co.devfoundry.patterns.observer;//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 
-import co.devfoundry.notification.Email;
-import co.devfoundry.notification.MobileApp;
-import co.devfoundry.notification.TextMessage;
-import co.devfoundry.order.Order;
-import co.devfoundry.order.OrderStatus;
+import co.devfoundry.patterns.observer.notification.Email;
+import co.devfoundry.patterns.observer.notification.MobileApp;
+import co.devfoundry.patterns.observer.notification.TextMessage;
+import co.devfoundry.patterns.observer.order.Order;
+import co.devfoundry.patterns.observer.order.OrderStatus;
 
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {

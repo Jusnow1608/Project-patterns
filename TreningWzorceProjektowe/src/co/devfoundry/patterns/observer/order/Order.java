@@ -1,6 +1,6 @@
-package co.devfoundry.order;
+package co.devfoundry.patterns.observer.order;
 
-import co.devfoundry.notification.Observer;
+import co.devfoundry.patterns.observer.notification.Observer;
 
 import java.util.HashSet;
 import java.util.Set;

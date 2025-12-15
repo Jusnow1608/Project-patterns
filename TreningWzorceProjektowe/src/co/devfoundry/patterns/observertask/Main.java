@@ -1,9 +1,9 @@
-package co.observertask;
+package co.devfoundry.patterns.observertask;
 
-import co.observertask.notification.InternetNews;
-import co.observertask.notification.RadioNews;
-import co.observertask.notification.TvNews;
-import co.observertask.weatherforecast.WeatherForecast;
+import co.devfoundry.patterns.observertask.notification.InternetNews;
+import co.devfoundry.patterns.observertask.notification.RadioNews;
+import co.devfoundry.patterns.observertask.notification.TvNews;
+import co.devfoundry.patterns.observertask.weatherforecast.WeatherForecast;
 
 public class Main {
     public static void main(String[] args) {

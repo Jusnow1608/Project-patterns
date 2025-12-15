@@ -1,6 +1,6 @@
-package co.devfoundry.notification;
+package co.devfoundry.patterns.observer.notification;
 
-import co.devfoundry.order.Order;
+import co.devfoundry.patterns.observer.order.Order;
 
 public class MobileApp implements Observer{
     public void update(Order order) {

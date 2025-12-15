@@ -1,6 +1,6 @@
-package co.observertask.weatherforecast;
+package co.devfoundry.patterns.observertask.weatherforecast;
 
-import co.observertask.notification.Observer;
+import co.devfoundry.patterns.observertask.notification.Observer;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -1,6 +1,6 @@
-package co.observertask.notification;
+package co.devfoundry.patterns.observertask.notification;
 
-import co.observertask.weatherforecast.WeatherForecast;
+import co.devfoundry.patterns.observertask.weatherforecast.WeatherForecast;
 
 public class InternetNews implements Observer{
     public void updateForecast(WeatherForecast weatherForecast)
