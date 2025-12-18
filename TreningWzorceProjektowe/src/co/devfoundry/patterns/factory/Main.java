@@ -5,10 +5,10 @@ import co.devfoundry.patterns.factory.units.*;
 public class Main {
     public static void main(String[] args) {
 
-        Factory factory = new UnitFactory();
+        InfantryFactory factory = new RedInfantryUnitFactory();
 
-        Unit tank = factory.createUnit(UnitType.TANK);
-        Unit infantryman = factory.createUnit(UnitType.RIFLEMAN);
+        InfantryUnit tank = factory.createUnit(UnitType.TANK);
+        InfantryUnit infantryman = factory.createUnit(UnitType.RIFLEMAN);
 
         //Unit tank2 = new Tank(1,1,1);
         //dzięki temu, że przeniesiono klasy do jednej paczki units i zmieniono widoczność konstruktorów
