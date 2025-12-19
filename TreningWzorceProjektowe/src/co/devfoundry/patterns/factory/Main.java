@@ -5,15 +5,18 @@ import co.devfoundry.patterns.factory.units.*;
 public class Main {
     public static void main(String[] args) {
 
-        InfantryFactory factory = new RedInfantryUnitFactory();
+        Factory blueFactory = new BlueFactory();
+        Factory redFactory = new RedFactory();
 
-        InfantryUnit tank = factory.createUnit(UnitType.TANK);
-        InfantryUnit infantryman = factory.createUnit(UnitType.RIFLEMAN);
+        MechanizedUnit redtank = redFactory.createMechanizedUnit(UnitType.TANK);
+        InfantryUnit redinfantryman = redFactory.createInfantryUnit(UnitType.RIFLEMAN);
 
-        //Unit tank2 = new Tank(1,1,1);
-        //dzięki temu, że przeniesiono klasy do jednej paczki units i zmieniono widoczność konstruktorów
-        //w taki sposob, ze konstruktor UnitFactory stal sie chroniony, a konstruktory klas Tank i Rifleman
-        //-domyslne, to z poziomu main uzytkownik nie ma mozliwosci tworzyc obiektow za pomoca konstrukorow
+        MechanizedUnit bluetank = blueFactory.createMechanizedUnit(UnitType.TANK);
+        InfantryUnit blueinfantryman = blueFactory.createInfantryUnit(UnitType.RIFLEMAN);
+
+        AirUnit redhelicopter = redFactory.createAirUnit(UnitType.HELICOPTER);
+        AirUnit bluehelicopter = blueFactory.createAirUnit(UnitType.HELICOPTER);
+
 
     }
 }
