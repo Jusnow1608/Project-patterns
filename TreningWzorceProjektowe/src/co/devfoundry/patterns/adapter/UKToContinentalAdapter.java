@@ -11,6 +11,5 @@ public class UKToContinentalAdapter implements ContinentalDevice {
     @Override
     public void on() {
         device.powerOn();
-
     }
 }
