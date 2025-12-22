@@ -2,14 +2,14 @@ package co.devfoundry.patterns.adapter;
 
 public class UKToContinentalAdapter implements ContinentalDevice {
 
-    private UKDevice device;
+    UKDevice device;
 
     public UKToContinentalAdapter(UKDevice device) {
         this.device = device;
     }
 
     @Override
-    public void powerOn() {
+    public void on() {
         device.powerOn();
 
     }

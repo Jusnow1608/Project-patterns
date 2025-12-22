@@ -3,16 +3,8 @@ package co.devfoundry.patterns.adapter;
 public class Main {
     public static void main(String[] args)
     {
-       ContinentalDevice radio = new ContinentalDevice() {
-
-           public void powerOn() {
-            System.out.println("Gra muzyka");
-           }
-       };
-
        ContinentalSocket continentalSocket = new ContinentalSocket();
-
-       continentalSocket.plugIn(radio);
+       UKSocket ukSocket = new UKSocket();
 
        UKDevice ukRadio = new UKDevice() {
 
@@ -22,10 +14,13 @@ public class Main {
            }
        };
 
-       UKSocket ukSocket = new UKSocket();
-       ukSocket.plugIn(ukRadio);
-
-       UKToContinentalAdapter adapter = new UKToContinentalAdapter(ukRadio);
-       continentalSocket.plugIn(adapter);
+        ContinentalDevice continentalRadio = new ContinentalDevice(){
+            public void on(){
+                System.out.println("London calling to the underworld");
+            }
+        };
+TwoWayAdapter adapter = new TwoWayAdapter(ukRadio, continentalRadio);
+continentalSocket.plugIn(adapter);
+ukSocket.plugIn(adapter);
     }
 }
