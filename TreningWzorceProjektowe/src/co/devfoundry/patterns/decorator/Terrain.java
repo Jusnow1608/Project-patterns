@@ -1,6 +1,6 @@
 package co.devfoundry.patterns.decorator;
 
-public class Terrain {
+abstract public class Terrain {
     private String description;
     private int fuelCost;
 
@@ -8,4 +8,10 @@ public class Terrain {
         this.description = description;
         this.fuelCost = fuelCost;
     }
+        public int fuelCost(){
+            return fuelCost;
+        }
+        public String getDescription() {
+            return description;
+        }
 }
