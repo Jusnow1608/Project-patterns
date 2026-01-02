@@ -2,35 +2,17 @@ package co.devfoundry.patterns.chainofresponsibility.officer;
 
 import co.devfoundry.patterns.chainofresponsibility.message.Message;
 
-public class Officer {
-    private boolean sergeant;
-    private boolean captain;
-    private boolean general;
+public abstract class Officer {
 
-    public void receiveMessage(Message message){
-        if (sergeant) {
-            System.out.println("Sierżant otrzymał wiadomość: "+ message.getContent());
-        }
-        else if (captain){
-            System.out.println("Kapitan otrzymał wiadomość: "+ message.getContent());
-        }
-        else if (general){
-            System.out.println("Generał otrzymał wiadomość: "+ message.getContent());
-        }
-        else {
-            System.out.println("Zły adresat wiadomości!");
-        }
+    private Officer superiorOfficer;
+
+    public abstract void processMessage(Message message);
+
+    public Officer getSuperiorOfficer() {
+        return superiorOfficer;
     }
 
-    public void setSergeant(boolean sergeant) {
-        this.sergeant = sergeant;
-    }
-
-    public void setCaptain(boolean captain) {
-        this.captain = captain;
-    }
-
-    public void setGeneral(boolean general) {
-        this.general = general;
+    public void setSuperiorOfficer(Officer superiorOfficer) {
+        this.superiorOfficer = superiorOfficer;
     }
 }
