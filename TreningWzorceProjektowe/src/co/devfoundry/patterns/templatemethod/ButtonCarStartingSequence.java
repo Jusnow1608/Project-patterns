@@ -1,6 +1,6 @@
-package co.devfoundry.patterns.templatemethod.templateMethod;
+package co.devfoundry.patterns.templatemethod;
 
-public class ButtonCarStartingSequence extends CarStartingSequence{
+public class ButtonCarStartingSequence extends CarStartingSequence {
 
     public void setTheGear() {
         System.out.println("Wybieramy bieg");

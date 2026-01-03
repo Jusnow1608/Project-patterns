@@ -1,6 +1,6 @@
 package co.devfoundry.patterns.templatemethodtask;
 
-public abstract class WorkingDaySequence {
+public abstract class WeekDay {
 
    public final void dayAtWork(TransportType transportType){
         wakeUp();
@@ -18,29 +18,30 @@ public abstract class WorkingDaySequence {
     }
 
     public void goHome(){
-        System.out.println("Wracam do domu"); 
+        System.out.println("Powrót do domu");
     }
 
     public abstract void work() ;
 
-    public abstract void goToWork(TransportType transportType);
+    public abstract int goToWork(TransportType transportType);
 
     private void brashTeeth() {
-        System.out.println("Myję zęby");
+        System.out.println("Mycie zębów");
         
     }
 
     private void eatBreakfast() {
-        System.out.println("Jem śniadanie");
+
+        System.out.println("Zjedzenie śniadania");
     }
 
     private void dressUp() {
-        System.out.println("Ubieram się");
+
+        System.out.println("Ubieranie się");
     }
 
     private void wakeUp() {
+
         System.out.println("Pobudka");
     }
-
-
 }

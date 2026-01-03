@@ -1,4 +1,4 @@
-package co.devfoundry.patterns.templatemethod.templateMethod;
+package co.devfoundry.patterns.templatemethod;
 
 public abstract class CarStartingSequence {
     public final void startTheCar(){

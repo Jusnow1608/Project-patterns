@@ -1,6 +1,6 @@
-package co.devfoundry.patterns.templatemethod.templateMethod;
+package co.devfoundry.patterns.templatemethod;
 
-public class ClassicCarStartingSequence extends CarStartingSequence{
+public class ClassicCarStartingSequence extends CarStartingSequence {
 
     public ClassicCarStartingSequence() {
     }
