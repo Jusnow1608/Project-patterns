@@ -7,6 +7,6 @@ public class Main {
 
         DeliveryBoxFacade deliveryBoxFacade = new DeliveryBoxFacade();
         deliveryBoxFacade.pickupPackage();
-        
+
     }
 }
