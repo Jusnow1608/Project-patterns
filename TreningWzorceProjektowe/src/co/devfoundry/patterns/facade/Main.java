@@ -1,20 +1,12 @@
 package co.devfoundry.patterns.facade;
 
-import co.devfoundry.patterns.facade.deliverybox.DeliveryBox;
-import co.devfoundry.patterns.facade.deliverybox.DeliveryBoxSystem;
+import co.devfoundry.patterns.facade.deliverybox.DeliveryBoxFacade;
 
 public class Main {
     public static void main(String[] args) {
-        pickupPackage();
-    }
 
-    private static void pickupPackage() {
-        DeliveryBox deliveryBox = new DeliveryBox();
-        DeliveryBoxSystem deliveryBoxSystem = new DeliveryBoxSystem();
-
-        deliveryBox.getUserData();
-        if (deliveryBoxSystem.isUserDataValidated() && deliveryBoxSystem.isPaymentSecured()) {
-            deliveryBox.openBox();
-        }
+        DeliveryBoxFacade deliveryBoxFacade = new DeliveryBoxFacade();
+        deliveryBoxFacade.pickupPackage();
+        
     }
 }
